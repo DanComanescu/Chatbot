@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+
+# Build / test artifacts
+dist/
+build/
+coverage/
+.pytest_cache/
+*.log
+
+# Temp review/issue bodies
+review-comment.md
+issue-body.md
+pr-body.md

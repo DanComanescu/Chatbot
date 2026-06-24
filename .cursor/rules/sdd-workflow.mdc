@@ -1,0 +1,13 @@
+---
+description: Spec-Driven Development workflow for CHATBOT specs, GitHub issues, and PRs
+alwaysApply: false
+---
+
+# SDD workflow
+
+When the user mentions specs, CHATBOT-###, SDD, or proj-* skills:
+
+1. Read `AGENTS.md` and `_specs/config.md` first.
+2. Follow `_specs/README.md` rules (no implementation with open questions).
+3. Invoke the matching repo skill under `.cursor/skills/` by name.
+4. Do not use Linear or Jira.
