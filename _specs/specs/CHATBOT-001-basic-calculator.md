@@ -1,7 +1,7 @@
 ---
 id: CHATBOT-001
 title: "Basic browser calculator"
-status: draft
+status: review
 branch: chatbot-001-basic-calculator
 created: 2026-06-24
 updated: 2026-06-24
@@ -57,5 +57,7 @@ Learn the SDD workflow by shipping a minimal calculator app: issue → spec → 
 ## Implementation Notes
 
 - Linked issue: https://github.com/DanComanescu/Chatbot/issues/1
-- E2E assessment: open `calculator/index.html` in browser and click through AC1–AC4
+- Files: `calculator/index.html`, `calculator/style.css`, `calculator/app.js`, `docs/README.md`
+- E2E assessment: open `calculator/index.html` in browser; verify AC1–AC4 manually
 - Tests: manual browser check (no test framework in repo yet)
+- Tradeoff: chained ops evaluate left-to-right (not PEMDAS) per spec scope
