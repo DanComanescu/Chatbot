@@ -24,8 +24,7 @@ Repo-local skills (invoke by name in Cursor Agent):
 - `proj-deliver-request` — carries one request from GitHub issue through spec, implementation, validation, ready PR, and review
 
 GitHub Projects track lightweight status when configured in `_specs/config.md`.
-New workflow-created issues enter `Backlog`.
-Ready PRs waiting for manual merge belong in `In review`.
+Status flow: **To do** (new issue) → **In progress** (building or PR ready) → **Done** (merged).
 
 No Linear or Jira workflow exists for this repo.
 

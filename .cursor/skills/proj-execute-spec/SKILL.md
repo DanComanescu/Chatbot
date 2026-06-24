@@ -16,7 +16,7 @@ Implement one existing local spec. Do not merge unless the human explicitly asks
 3. Check `git status` and preserve unrelated changes.
 4. Use the spec frontmatter `branch` value.
 5. Switch to that branch, creating it from `main` only when needed.
-6. Set spec `status: implementing` and update `updated`.
+6. Set spec `status: implementing` and update `updated`. If Project IDs are configured, set linked issue Project status to `In progress`.
 7. Implement the task breakdown narrowly.
 8. Add focused tests where infrastructure exists.
 9. Run scoped validation.
@@ -28,8 +28,9 @@ Implement one existing local spec. Do not merge unless the human explicitly asks
 15. If validation passed and PR is draft, mark ready with `gh pr ready`.
 16. Coordinate exactly one reviewer pass (see Reviewer coordination below).
 17. If reviewer says `Verdict: Changes required`, fix, validate, push, and request another pass.
-18. If a ready PR waits for manual merge and Project IDs are configured, set Project status to `In review`.
-19. Report changed files, tests, PR URL, readiness state, reviewer verdict, blockers, and remaining risk.
+18. If a ready PR waits for manual merge and Project IDs are configured, keep Project status at `In progress`.
+19. When the human confirms merge or marks work complete, set Project status to `Done` if IDs are configured.
+20. Report changed files, tests, PR URL, readiness state, reviewer verdict, blockers, and remaining risk.
 
 ## Reviewer coordination
 

@@ -15,7 +15,7 @@ Create one GitHub issue. Do not use Linear or Jira.
 2. Inspect labels with `gh label list --repo OWNER/REPO` when labels matter.
 3. Ask at most one clarifying question only when the issue would be materially wrong without it.
 4. Create the issue with `gh issue create --repo OWNER/REPO`.
-5. If GitHub Project IDs are configured in `_specs/config.md`, add the issue to the Project and set Status to `Backlog`.
+5. If GitHub Project IDs are configured in `_specs/config.md`, add the issue to the Project and set Status to `To do`.
 6. Return issue title, URL, labels, Project status, and open follow-up.
 
 ## Issue Shape
@@ -38,7 +38,7 @@ gh project item-edit \
   --id PROJECT_ITEM_ID \
   --project-id PROJECT_ID \
   --field-id STATUS_FIELD_ID \
-  --single-select-option-id BACKLOG_OPTION_ID \
+  --single-select-option-id TODO_OPTION_ID \
   --format json
 ```
 
